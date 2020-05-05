@@ -9,8 +9,7 @@ using namespace std;
 #define LIMIT 26        // Max array size, which is number of alphabet
 #define languageSize 8	// max size of the language list, 8 total
 
-// Making all the filname into an array so that we can use for loop to iterate index to count / cout
-// The text and the letter count
+// Store filenames into array of strings
 const string languageNameList[] = {"MacbethEnglish.txt","MacbethFinnish.txt","MacbethFrench.txt","MacbethGerman.txt","MacbethHungarian.txt","MacbethItalian.txt","MacbethPortuguese.txt","MacbethSpanish.txt"};
 const string languageName[] = {"English", "Finnish", "French", "German", "Hungarian", "Italian", "Portuguese", "Spanish"};
 
@@ -63,9 +62,7 @@ void languageChecker(int languageLetterArray[languageSize][LIMIT], int inputLett
 	
 	for(int i = 0; i < languageSize; i++){
 		for(int j = 0; j < LIMIT; j++){
-			// store the difference between the input Letter compare to each langauge's sample Letter Frequency
-			// Theoretically, the language that has the least difference in ordering should be the actual langauge
-			// not 100% error proof, but it's something to work with
+			// store the difference between the input Letter compare to each langauge's sample letter Frequency
 			startIndex = j;
 			target = languageLetterArray[i][j];
 			digitDiff = fabs(startIndex - findIndex(inputLetterArray, target));
@@ -75,7 +72,7 @@ void languageChecker(int languageLetterArray[languageSize][LIMIT], int inputLett
 			letterDifference[i] += digitDiff;
 		}
 	}
-
+	// display language
 	languageIndex = findIndex(letterDifference, findMin(letterDifference));
 	string language = languageName[languageIndex];
 	cout << "\n\nLanguage is " << language << "." << endl;
@@ -95,6 +92,7 @@ void swap(int array[], int x, int y){
 //
 // bubbleSort:
 //    sort in decending order
+//
 void bubbleSort(int list[], int sortList[],  int limit){
 	for(int pass = 0; pass < limit - 1; pass++){
 		for(int i = limit - 2; i >= 0 + pass; i--){
@@ -114,7 +112,7 @@ void printLanguageLetterCount(int languageCountArray[languageSize][LIMIT]){
 	for (int i=0; i<LIMIT; i++) {
         cout << (char)(i+'A') << ":";
         for(int j = 0; j < languageSize; j++){
-            // See if it is a printable character and if there were any of that character
+            // Check if printable char and if any of the chars exist
             if ( languageCountArray[j][i] != 0 ) {
                 // display the character and the number of occurences
                 cout << setw(6) << languageCountArray[j][i];
@@ -130,8 +128,8 @@ void printLanguageLetterCount(int languageCountArray[languageSize][LIMIT]){
 //	read user input text for option 3 and 4 and count letter frequency
 //
 void inputReader(int inputCountArray[LIMIT]){
-	char c; // letter input
-	// initalize inputLetterArray[]
+	char c;
+	// initalize array
 	while(cin >> c){
 		if(isalpha(c)){
 			c = toupper(c);
@@ -146,15 +144,15 @@ void inputReader(int inputCountArray[LIMIT]){
 // 	read the given txt file that contains sample language text and get the letters count
 //
 void fileReader(int languageCountArray[languageSize][LIMIT]){
-	// languageIndex is for iterating thorugh different language
-	// This for loop loop through all 8 language text and run code to count letters in them
-    for(int languageIndex = 0; languageIndex < languageSize; languageIndex++){
-        ifstream inputFileStream;  // declare the input file stream
-        char c = ' ';              // input character
-        // set the name of the file to open using the index from languageIndex
-        string fileName = languageNameList[languageIndex];
+	
+	// Iterate through all txt files and count letters in them
+    	for(int languageIndex = 0; languageIndex < languageSize; languageIndex++){
+        	ifstream inputFileStream;  // declare the input file stream
+        	char c = ' ';              // input character
+        	// set the name of the file to open using the index from languageIndex
+        	string fileName = languageNameList[languageIndex];
         
-        // open input file and verify
+        // open file
         inputFileStream.open( fileName.c_str());   // Convert C++ string to expected C-style string 
         if(!inputFileStream.is_open()){
             cout << "Could not find input file.  Exiting..." << endl;
@@ -194,7 +192,7 @@ void printSortLetter(int languageLetterArray[languageSize][LIMIT]){
 // printInputLetterCount:
 //
 void printInputLetterCount(int inputCountArray[LIMIT], int inputLetterArray[LIMIT]){
-	char printable; // tempoary variable
+	char printable; 
 	for(int i = 0; i < LIMIT; i++){
 		printable = inputLetterArray[i] + 'A';
 		cout << printable << ":" << inputCountArray[i] << " ";
@@ -207,12 +205,14 @@ void printInputLetterCount(int inputCountArray[LIMIT], int inputLetterArray[LIMI
 // initializeArray:
 //
 void initalizeArray(int languageLetterArray[languageSize][LIMIT], int inputLetterArray[LIMIT], int inputCountArray[LIMIT]){
-	// Improve readability, initalize array with 0 to 25 or all 0s
+	// Initalize language letter array
 	for(int i = 0; i < languageSize; i++){
 		for(int j = 0; j < LIMIT; j++){
 			languageLetterArray[i][j] = j;
 		}
 	}
+
+	//Initialize input letter array
 	for(int i = 0; i < LIMIT; i++){
 		inputLetterArray[i] = i;
 	}
@@ -228,39 +228,45 @@ void printUserSortLetter(int languageLetterArray[languageSize][LIMIT], int input
 	char printable; // tempoary variable
 	int i = 0;
 	for (i = 0; i < LIMIT; i++) {
-        cout << "   "; // indent in front of each lines of output
-        for(int j = 0; j < languageSize; j++){
-			      printable = languageLetterArray[j][i] + 'A';// This prints out 0 as A, and 2 as C, which is what we wanted
-            cout << setw(6) << printable;
-    	}
-    	printable = inputLetterArray[i] + 'A'; // prints out extra colume of user input's letter sort order
-    	cout << setw(6) << printable;
-    	cout << "\n";
+        	cout << "   "; // indent in front of each lines of output
+        	for(int j = 0; j < languageSize; j++){
+	    		printable = languageLetterArray[j][i] + 'A';// This prints out 0 as A, and 2 as C, which is what we wanted
+            		cout << setw(6) << printable;
+    		}
+    		printable = inputLetterArray[i] + 'A'; // prints out extra colume of user input's letter sort order
+    		cout << setw(6) << printable;
+    		cout << "\n";
 	}
 }
 
+//
+//
+// main:
+//
 int main(){
       
-      	// multiarray use for storing letter count numbers for each language
+      	// 2D use for storing letter count numbers for each language
 	int languageCountArray[languageSize][LIMIT] = {0};
 
         // The "pointer" array, size is exactly same as languageCountArray
         // each element in this array is matched to a unique index in languageCountArray
-        // languageCountArray stores A's letter Count in index 0, and C's letter Count in index 2
-        // during bubbleSort, for each value we swap in langaugeCountArray, we also swap the index value of languageLetterArray
-        // So that the languageLetterArray after bubbleSort gives the Frequency of Letters in Letters instead of Numbers.
+        // languageCountArray stores A's letter count in index 0, and C's letter count in index 2
+        // during bubbleSort, for each value we swap in languageCountArray, the index value of languageLetterArray is also swapped
+        // The languageLetterArray after bubbleSort gives the frequency of letters in chars instead of integer values.
 	int languageLetterArray[languageSize][LIMIT];
 	
-	// arrays use for taking in userInput and keep track of letter order
-	// inputLetterArray will probably not be used for part 3, but we will need it for part 4 so I just added it
+	// user input array
 	int inputCountArray[LIMIT] = {0};
+	
+	// letter order array 
 	int inputLetterArray[LIMIT];
 	
 	initalizeArray(languageLetterArray, inputLetterArray, inputCountArray);
-	fileReader(languageCountArray); // read txt file of each langauge and count the Letter counts
+	fileReader(languageCountArray); // read txt file of each language 
 	
 	int userInput;
 	
+	// display prompt
 	cout << "Program 3: Which Language.\n\n";
 	cout << "Select from the following stages of output to display:\n"
    		 <<	"1. Letter frequency counts\n"            
@@ -270,29 +276,31 @@ int main(){
    		 << "0. Exit the program\n"
 		 << "Your choice --> ";
 	
+	// take input
 	cin >> userInput;
 	
+
 	if(userInput >= 1){
 		cout << "Letter Frequency Counts:\n";
-    	cout << "    Engl  Finn  Fren  Germ  Hung  Ital  Port  Span\n";
-    	printLanguageLetterCount(languageCountArray);	
+    		cout << "    Engl  Finn  Fren  Germ  Hung  Ital  Port  Span\n";
+    		printLanguageLetterCount(languageCountArray);	
 	} 
 	if(userInput >= 2){
 		cout << "\nLetter frequency order:\n";
-    	cout << "     Engl  Finn  Fren  Germ  Hung  Ital  Port  Span\n";
-    	for(int languageIndex = 0; languageIndex < languageSize; languageIndex++){
-    		bubbleSort(languageCountArray[languageIndex], languageLetterArray[languageIndex], LIMIT);
-    	}
+    		cout << "     Engl  Finn  Fren  Germ  Hung  Ital  Port  Span\n";
+    		for(int languageIndex = 0; languageIndex < languageSize; languageIndex++){
+    			bubbleSort(languageCountArray[languageIndex], languageLetterArray[languageIndex], LIMIT);
+    		}
 		printSortLetter(languageLetterArray);
 	}
 	if(userInput >= 3){
 		cout << "\nCopy and paste a paragraph of text to be analyzed, followed by ^z (PC) or ^d (Mac): \n";
-	    inputReader(inputCountArray);
-	    cout << "\n\n";
-	    printInputLetterCount(inputCountArray, inputLetterArray);
-	    cout << "\n\nLetter frequency order:\n";
-    	cout << "     Engl  Finn  Fren  Germ  Hung  Ital  Port  Span  User\n";
-    	bubbleSort(inputCountArray, inputLetterArray, LIMIT);
+	    	inputReader(inputCountArray);
+	    	cout << "\n\n";
+	    	printInputLetterCount(inputCountArray, inputLetterArray);
+	    	cout << "\n\nLetter frequency order:\n";
+    		cout << "     Engl  Finn  Fren  Germ  Hung  Ital  Port  Span  User\n";
+    		bubbleSort(inputCountArray, inputLetterArray, LIMIT);
 		printUserSortLetter(languageLetterArray, inputLetterArray);
 	}
 	if(userInput >= 4){
