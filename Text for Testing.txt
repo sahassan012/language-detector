@@ -1,0 +1,71 @@
+Texts for testing (try using just one sentence):
+
+English
+The amount a teenager sleeps is associated with how likely they are to engage in risky and suicidal behavior, a new study said. 
+"Fewer hours of sleep on an average school night [is] associated with increased odds of all selected unsafe behaviors," the 
+authors wrote, including risk-taking while driving, such as drunken driving, potentially unsafe sexual activity, aggressive 
+behavior and use of alcohol, tobacco and other drugs. Participants' sleep duration was categorized as eight hours or more, 
+seven hours, six hours or, less than six hours and then measured against high-risk behaviors, in the study published Monday 
+in the journal JAMA Pediatrics. The team found the strongest associations in relation to mood and self-harm. Teens who slept 
+for less than six hours per night were three times more likely to report considering suicide, planning a suicide attempt or 
+attempting suicide, compared with teens who slept eight hours or more. They were also four times more likely to have reported 
+a suicide attempt that resulted in them needing treatment.
+
+Finnish
+Päivän lakko kohdistuu suuriin työnantajiin, jotka eivät saisi soveltaa heikennettyjä irtisanomissääntöjä. Ammattiyhdistysliikkeessä 
+epäillään, että pienistä yrityksistä alkavat helpotukset irtisanomissääntöihin leviäisivät ajan mittaan suurempiin.
+Suuria työnantajia edustava Elinkeinoelämän keskusliitto laskee, että työnseisaus aiheuttaa 50 miljoonan euron menetyksen kansantuotteeseen.
+
+French
+Voilà Roche et Aznavour intégrés dans la petite cour de celle qu'ils appellent tous « la grande prêtresse ». Édith Piaf 
+règne avec autorité, mais aussi beaucoup d'humour : elle apprécie les artistes qui savent rire et blaguer. Le jeune Charles 
+regarde passer les amants – dont Marcel Cerdan – et devient l'homme à tout faire, tantôt chauffeur, éclairagiste, confident, 
+traîne-valise, secrétaire… Il collectionne les surnoms, parfois « petit con », le lendemain, « petit génie », ou bien simplement
+« le petit génie con ». En retour, il la vouvoie toujours, impressionné par sa carrière. « Je n'avais pas de tâche précise, 
+se souvenait-il. Je me souviens qu'on riait beaucoup. Avec elle, on s'attendait à tout... Elle avait pris l'habitude de nous 
+lire les romans ou les livres qui l'emballaient. Un jour, je m'endors. "Mon salaud, tu dors pendant que je lis !" Et elle me 
+fiche dehors… »
+
+German
+Donna Strickland wird von ihrem deutschen Kollegen Günter Steinmeyer, der am Berliner Max-Born-Institut unter anderem auf ihren 
+Arbeiten aufbauende Forschung betreibt, als „sehr bodenständig“ bezeichnet. Sie ist keine typische Physik-Nobelpreisträgerin. 
+Sie hält sich mit Fachjargon zurück. Und gefragt, was für sie das wichtigste Beispiel für die Anwendung ultraschneller Laserpulse 
+sei, kommt keine umständliche Beschreibung einer speziellen technischen Umsetzung, die Teile der Physik revolutioniert hat, 
+sondern Strickland sagt schlicht: „Ich finde vor allem besonders, dass man aus einem einfarbigen Lichtstrahl alle Farben des 
+Regenbogens herstellen kann, wenn der Strahl nur kurz und intensiv genug ist.“ Natürlich verstehe man inzwischen, was dort 
+physikalisch passiert, „aber es ist einfach cool, das zu sehen.“
+
+Hungarian
+A várhatóan októberben induló nemzeti konzultáción arra keresi a kormány a választ, hogyan lehetne segíteni a családokat, illetve 
+milyen intézkedések kellenének ahhoz, hogy még több gyermek szülessen Magyarországon. A miniszterelnök a Kossuth Rádiónak adott 
+pénteki interjújában nagyon fontosnak nevezte például fiatalok, a fiatal szülők támogatását. Orbán Viktor úgy fogalmazott: olyan 
+Magyarországot képzelek el, ahol egyetlen fiatal sem változtatja meg a családalapítási terveit csak azért, mert gazdasági, anyagi 
+nehézségbe ütközik. Erről szól a konzultáció, hogy miként tud a kormány több segítséget nyújtatni ezeknek a fiataloknak.
+
+Italian
+Ma per arrivare a un agreement bisogna essere in due. E dato che il governo intende resistere sui numeri della manovra, è 
+necessario offrire garanzie all’Europa e ai mercati. Perciò sono stati stabiliti due capisaldi: uno tecnico, l’altro più 
+politico. La riduzione strutturale del debito viene fissato come un «obiettivo strategico», non a caso sottolineato da Di 
+Maio dopo il vertice. La linea dell’esecutivo è che per far ripartire l’Italia sia necessario «cambiare approccio» con una 
+manovra espansiva «dopo anni di cure rigoriste senza risultati», ma senza dimenticare la necessità di abbattere il debito. 
+A tale proposito il ministro dell’Economia resta dell’idea che — a seconda dei risultati del 2019 — le cifre nel 2020 e nel 
+2021 potranno essere «rimodulate». Inoltre dovrà essere spiegato agli interlocutori che con la legge di Stabilità verranno 
+assorbite anche le clausole di salvaguardia.
+
+Portuguese
+Elas pregam o empoderamento, lutam pelo fim da violência contra a mulher, querem direitos iguais, participar da política, 
+ter vez e voz. Pautas que, tradicionalmente, têm sido mais associadas à esquerda. Algumas mulheres, entretanto, unem essas 
+visões a posições e ideologias também apresentadas pelo outro lado do espectro político. Elas se consideram feministas, mas 
+se identificam com pautas da direita. Esse grupo de mulheres que foi entrevistado por VEJA está na casa dos 40 anos. São 
+profissionais bem-sucedidas, que já encararam obstáculos no mercado de trabalho pelo simples fato de serem do sexo feminino 
+e identificam a necessidade de criação de políticas e ações voltadas para a mulher.
+
+Spanish
+El director del Instituto Politécnico Nacional, Mario Alberto Rodríguez Casas, afirmo que a 50 años de distancia del Movimiento 
+del 68 desencadenó el nacimiento de una sociedad más madura y consiente del valor de los derechos, como el de la libertad de 
+expresión. Al hablar en la sesión solemne celebrada en la Cámara de diputados donde se develo en letras de oro la leyenda “Al 
+Movimiento Estudiantil de 1968”, en el muro de honor del Palacio Legislativo de San Lázaro, Rodríguez Casas señaló que la mejor 
+forma de honrar la memoria del movimiento es reflexionar sobre la responsabilidad que tiene el Politécnico Nacional y a la UNAM 
+en la formación de los jóvenes. "Cincuenta años después somos testigos de la evolución de la vida política de nuestra nación, 
+tenemos diversidad política, alternancia, instituciones ciudadanas, libertades que no soñábamos, tolerancia y respeto por los 
+que piensan diferente", apuntó ante diputados y representantes del Comité del 68.
