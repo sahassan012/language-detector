@@ -267,18 +267,17 @@ int main(){
 	int userInput;
 	
 	// display prompt
-	cout << "Program 3: Which Language.\n\n";
+	cout << "Language Detector.\n\n";
 	cout << "Select from the following stages of output to display:\n"
    		 <<	"1. Letter frequency counts\n"            
    		 <<	"2. Letter frequency order\n"                
    		 <<	"3. Get user input and display frequency counts\n" 
    		 <<	"4. Get user input, display frequency counts, and display language\n"
-   		 << "0. Exit the program\n"
-		 << "Your choice --> ";
+   		 << 	"0. Exit the program\n"
+		 << 	"Enter choice > ";
 	
 	// take input
 	cin >> userInput;
-	
 
 	if(userInput >= 1){
 		cout << "Letter Frequency Counts:\n";

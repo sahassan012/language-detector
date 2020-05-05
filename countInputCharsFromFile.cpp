@@ -14,7 +14,9 @@ int main()
    char c = ' ';              // input character
    int i;                     // loop counter
 
-	string fileName = "MacbethFrench.txt";
+   string fileName;
+   cout << "Enter filename to count characters from >";
+   cin >> fileName;
 	
    // open input file and verify
    inputFileStream.open( fileName.c_str());   // Convert C++ string to expected C-style string 
