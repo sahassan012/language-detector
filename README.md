@@ -14,11 +14,13 @@ The following languages may be identified by the program:
 
 ### How to run(from command line)
 Compile the program with:
-```$ g++ main.cpp
+```console
+$ g++ main.cpp
 ```
 This will create an executable ``a.out`` file
 
 Run the executable using:
-```$ ./a.out
+```console
+$ ./a.out
 ```
 
