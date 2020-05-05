@@ -1,6 +1,6 @@
 # Language Detector
 ### About
-This program uses given text files with different languages to build knowledge on character frequency for each language that is provided. In this project directory, there are 8 texts from Macbeth in different languages. Then, it counts character frequency, sorts, and stores it in an array. Finally, it uses the character frequency of the user's input with that of the stored frequency picked up from the text files and matches the most frequent characters to determine which language is being read.
+This program uses given text files with different languages amd uses their character frequency as a signature(there are 8 Macbeth files in the directory). Then, it counts character frequency, sorts, and stores it in an array. Finally, it uses the character frequency of the user's input with that of the stored frequency picked up from the text files and matches the most frequent characters to determine which language is being read.
 
 The following languages may be identified by the program:
 - English
