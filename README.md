@@ -1,8 +1,10 @@
 # Language Detector
 ### About
-This program uses given text files with different languages and uses their character frequency as a signature. There are 8 Macbeth files in the directory. It then counts the character frequency for each given language, sorts, and stores it in an array. Finally, it uses the character frequency of the user's input with that of the stored frequency picked up from the text files and matches the most frequent characters to determine which language is being read.
+This program uses given text files with different languages and uses their character frequency as a signature. It then counts the character frequency for each given language, sorts, and stores it in an array. Finally, it uses the character frequency of the user's input with that of the stored frequency picked up from the text files and matches the most frequent characters to determine which language is being read.
 
-Given the files in the project directory, the following languages may be identified by the program:
+
+In the directory, you will find 8 files each consisting of a translation of Macbeth by William Shakespeare.
+Given these files, the following languages may be identified by the program:
 - English
 - Finnish
 - French
